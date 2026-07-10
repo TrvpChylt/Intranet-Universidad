@@ -27,18 +27,6 @@
     </div>
     <!--===== FIN DE CONTENEDOR DE INICIO DE SESION =====-->
 <script src="../Public/js/form_dinamico.js"></script>
-<script>
-    function validarSoloNumeros(event) {
-        var charCode = event.which || event.keyCode;
 
-        // Permitir solo números (0-9) o la tecla Enter (13)
-        if ((charCode >= 48 && charCode <= 57) || charCode === 13) {
-            return true; // Permite la tecla
-        }
-        // Bloquear cualquier otra tecla
-        event.preventDefault();
-        return false;
-    }
-</script>
 </body>
 </html>
