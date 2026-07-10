@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+   <html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="Public/css/homeStyl.css">
+      <!--=========logo de la pagina=============-->
+      <link rel="shortcut icon" href="Public/img/polichacao.png" type="image/x-icon">
+      <title>Intranet | Policía De Chacao</title>
+   </head>
+   <body>
+   <!-- codigo de jesus Ramos  -->
+<!-- ========================================================= 
+--- Header de la Pagina --- */
+=========================================================  -->
+<header class="header-fijo">
+   <div class="contenedor-header">
+      <div class="header-left">
+         <div class="logo-con-brillo">
+            <img src="Public/img/polichacao.png" alt="Logo de la Policía de Chacao">
+            <span class="brillo-efecto"></span>
+         </div>
+         <div class="titulo_policial">
+            POLICÍA DE CHACAO
+         </div>
+      </div>
+      <nav class="navegacion-principal">
+         <ul>
+            <li><a href="view/Login.html">Talento Humano</a></li>
+            <li class="dropdown">
+               <a href="#" class="dropbtn">Estadísticas</a>
+               <div class="dropdown-menu">
+                  <a href="#">Actividades</a>    
+               </div>
+            </li>
+
+            <li><a href="#" class="nav__link">Plantilla</a></li>
+
+            <li><a href="#" class="nav__link">Academia</a></li>
+         </ul>
+      </nav>
+   </div>
+</header>
+<script>
+   window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header-fijo');
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 30) {
+         header.classList.add('header-scrolled');
+      } else {
+         header.classList.remove('header-scrolled');
+      }
+   });
+</script>
+
+
+<div class="imagen-con-capa">   
+   <div class="contenedor-presentacion">  
+   <div class="capa-oscura"></div>  
+   <div class="contenedor-img2-carrusell">
+   <div class="wrapper">  
+      <div class="wrapper-holder">  
+         <!-- Tus imágenes en divs -->
+         <a href="noticias/Pagina_1.php"><div class="slider-image2"><img src="Public/img/prensa/BANNER PASEO DE NIÑOS.png" alt="Imagen 2"></div></a>
+         <a href="noticias/Pagina_2.php"><div class="slider-image"><img src="Public/img/prensa/BANNER ASCENSOS  .png" alt="Imagen 1"></div></a>
+         <a href="noticias/Pagina_3.php"><div class="slider-image"><img src="Public/img/prensa/BANNER PATRULLEROS (2).png" alt="Imagen 3"></div></a>
+         <a href="noticias/Pagina_4.php"><div class="slider-image"><img src="Public/img/prensa/BANNER DESPLÁZATE SEGURO.png" alt="Imagen 4"></div></a>
+      </div>
+   </div>
+   <div class="button-holder" id="img2">  
+      <button class="button-carru" data-target="0">1</button>  
+      <button class="button-carru" data-target="1">2</button>  
+      <button class="button-carru" data-target="2">3</button>  
+      <button class="button-carru" data-target="3">4</button>  
+   </div>
+   </div>
+   </div>  
+</div>  
+<!--===== Fin imagen de presentacion =====-->
+
+
+<!--===== Tarjetas =====-->
+<div class="container-card">    
+   <!--===== HISTORIA =====-->
+   <div class="card" >
+      <figure>
+         <img src="Public/img/informaciones/historia.jpeg">
+      </figure>
+
+      <div class="contenido-card">
+      <pp>Historia</pp>
+      <div class="boton-modal">
+         <label for="btn-modal">
+            Leer
+         </label>
+      </div>
+      <input type="checkbox" id="btn-modal">
+      <div class="container-modal">
+        <div class="content-modal">
+            <h2>Historia</h2>
+            <p class="texto_blcak">Con la entrada en vigencia de la reforma de la Ley Orgánica de Régimen Municipal del 15 de junio de 1989, la figura del Distrito Sucre desaparece, dando nacimiento a los municipios Sucre, Baruta, El Hatillo y Chacao; este último, obtiene su autonomía a partir del 13 de noviembre de 1991, cuando la Asamblea Legislativa del estado Miranda promulgó la ley de creación del municipio de Chacao, publicada en la Gaceta Oficial de la región el 17 de enero de 1992.<br><br>
+               Once meses más tarde se celebraron las primeras elecciones directas para escoger a las autoridades del municipio Chacao obteniendo la victoria para el primer mandato la exmiss Universo Irene Sáez Conde, quien tomó posesión el 4 de enero de 1993. Para aquel entonces, Sáez se estrenaba como primera mandataria del sexto municipio más joven del área metropolitana de Caracas, y el de menor extensión, con unas 3.600 hectáreas, pero el de mayor complejidad por ser eje de crecimiento de la ciudad capital.<br><br>
+               Iniciando la gestión, el equipo de gobierno se percata que la primordial demanda de los habitantes de Chacao era la seguridad personal y la de los bienes, debido a que el área geográfica era atractiva para los delincuentes, y era considerada de alto riesgo, dada a su intensa actividad comercial y la presencia de afluentes zonas residenciales.<br><br>
+               El 12 de marzo del ese año, bajo la ordenanza Extraordinaria N° 022 nace el Instituto Autónomo Policía Municipal de Chacao, el cual fue concebido para la prevención y acción puntual anti delictiva, dar atención inmediata a los hechos punibles, así como también de resguardar los bienes públicos, privados, y de la comunidad, además de mantener el orden, la vialidad, y el tránsito.<br><br>
+               Irene Sáez, junto al Comisario General Rafael Enrique Cadalso Acosta (+) y otras autoridades, dan inicio al proceso de formación y capacitación, tanto física como profesionalmente en materia de seguridad y prevención del crimen, a hombres y mujeres destinados a proteger y servir a la comunidad.<br><br>
+               Su fundación estuvo marcada por parámetros basados en un acercamiento entre el funcionario policial y el vecino de Chacao, para así crear la cultura del “policía amigo de los ciudadanos”, principal objetivo para el logro de un servicio de calidad integral en cuanto a seguridad ciudadana se refiere, y lo cual constituyó un concepto único para la época, diferenciador de lo que el colectivo consideraba era un “policía”.<br><br>
+               Un concepto único para la época, diferenciador de lo que el colectivo consideraba era un “policía”.<br><br>
+               PoliChacao fue pionera en la implementación de radios de comunicación vecinal, que mantiene a los residentes en contacto directo e inmediato con el cuerpo policial. Una policía preparada, equipada, con brigadas caninas, unidades móviles que sirvieron de estaciones policiales, dotadas con los más sofisticados equipos, pero sobre todo un cuerpo que mantiene un vínculo canalizador de los problemas que se presentan en la comunidad.<br><br>
+               Más adelante en 1994, el tránsito en el municipio requirió una acción inmediata y eficaz, producto de los inmensos problemas creados por un agobiante tráfico continuo que incidía directamente en la calidad de vida del habitante y del trabajador de Chacao.<br><br>
+               Con el apoyo del Mayor(r) de la Guardia Nacional Francisco García Cuervo, se da respuesta y se crea la primera Inspectoría de Tránsito en Chacao denominada Instituto Autónomo de Tránsito, Transporte, y Circulación IATTC, dando resultados muy positivos.<br><br>
+               El ejercicio de las funciones del IATTC, se basó en una estructura de apoyo dinámico y puntual, formada por policías de circulación que se desplazan en motos patrullas, unidades funcionales, mini buses y patinetas, cubriendo rápida y eficazmente la autopista, calles y avenidas.<br> <br>
+               Los Policías de Circulación fueron pivotes del entrenamiento, jóvenes universitarios en su mayoría quienes conformaron un equipo de 190 personas encargados de ordenar la movilización del transporte en Chacao, y brindar un servicio de vigilancia y fiscalización permanente.<br> <br>
+               En 2010, y de conformidad con la Ley Orgánica del Servicio de Policía y del Cuerpo de Policía, pasa a formar parte del Instituto Autónomo Policía Municipal de Chacao con la denominación de Dirección de Vigilancia y Transporte Terrestre.<br><br>
+               Actualmente se encarga de controlar la circulación peatonal y vehicular; el ordenamiento de la circulación vial a través de los semáforos, la demarcación y señalización. Además, supervisar y controlar el sistema de transporte público municipal, el levantamiento e instrucción de expedientes por accidentes viales y el registro computarizado de infracciones de tránsito.<br><br>
+            </p>
+            <div class="btn-cerrar">
+                <label for="btn-modal">
+                Cerrar
+                </label>
+            </div>
+         </div>
+      </div>
+      </div>
+   </div>
+   <!--===== FIN DE HISTORIA =====-->
+
+   <!--===== MISION Y VISION =====-->
+   <div class="card">
+      <figure>
+         <img src="Public/img/informaciones/mision_vision.jpeg">
+      </figure>
+
+      <div class="contenido-card">
+      <pp>Misión, Visión y Valores</pp>
+      <div class="boton-modal2">
+         <label for="btn-modal2">
+            Leer
+         </label>
+      </div>
+      <input type="checkbox" id="btn-modal2">
+         <div class="container-modal2">
+            <div class="content-modal2">
+               <h2>Misión</h2>
+               <p class="texto2">
+               Ser el mejor aliado del ciudadano garantizando la protección del libre ejercicio de los derechos, deberes y libertades de las personas; así como prevenir y combatir el delito a fin de crear las condiciones necesarias para generar bienestar y mejorar la calidad de vida de los habitantes y transeúntes del Municipio Chacao. Brindar un excelente e integral servicio de seguridad ciudadana soportado en tecnología de avanzada, eficiencia y en la calidad del talento humano. <br>
+               </p><br>
+               <h2>Visión</h2>
+               <p class="texto2">Ser la mejor policía municipal de América Latina. Organizada, cohesionada, preparada y dotada con la tecnología de punta, operando de forma desconcentrada e integrada con la Comunidad y dispuesta a garantizar el municipio más seguro del Continente.</p>
+               <h2>Valores</h2>
+               <p class="texto2">Honor: Cualidad moral que nos obliga a cumplir por convicción con nuestros deberes. <br><br>
+               Justicia: Proceder de acuerdo a las leyes vigentes. <br><br>
+               Lealtad: Fidelidad al juramento prestado a la institución, a la comunidad, a los superiores, a los compañeros y subalternos. <br>
+               </p>
+               <div class="btn-cerrar2">
+                  <label for="btn-modal2">
+                  Cerrar
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--===== FIN DE MISION Y VISION =====-->
+
+<!--===== 100 DIAS DE GESTION =====-->
+<div class="card">
+      <figure>
+         <img src="Public/img/informaciones/gestion.png">
+      </figure>
+
+      <div class="contenido-card">
+      <pp>100 Días De Gestión</pp>
+      <div class="boton-modal3">
+        <label for="btn-modal3">
+            Leer
+        </label>
+      </div>
+      <input type="checkbox" id="btn-modal3">
+      <div class="container-modal3">
+        <div class="content-modal3">
+            <h2>100 Días de Gestión</h2>
+            <p class="texto_black">En Chacao la gestión de Seguridad Ciudadana es prioridad. Es por ello que, desde noviembre de 2024, se han venido realizando avances importantes para fortalecer a la Policía Municipal, reivindicar a nuestros funcionarios y brindar un mejor servicio a la ciudadanía.<br><br>
+               Al asumir la dirección el Comisario General Luis Gonzalo Fernández, se realizó una reingeniería en el cuerpo de seguridad, iniciando con el nombramiento del subdirector de la institución Comisario Jefe José Ramírez Guanipa junto a una serie de cambios en la plantilla policial. Se restableció la conexión del Sistema de Investigación e Información Policial (Siipol) del Cuerpo de Investigaciones Científicas, Penales y Criminalísticas (Cicpc), lo que ha permitido fortalecer la función policial y la verificación de personas en la calle. <br><br>
+               En el parque automotor se han recuperado y puesto en marcha un autobús oficial, y 14 unidades patrulleras con cambios y actualización de cocteleras con tecnología led para tener mejor presencia policial en las calles del municipio. <br><br>
+               Nuestros servidores públicos han sido provistos de nuevos uniformes con la más alta calidad y el confort necesario para realizar un trabajo eficiente, dar un mayor rendimiento y mostrar una buena imagen ante los ciudadanos. Esto aunado a unos incentivos salariales que buscan enaltecer la figura del Policía de Chacao.<br><br>
+               Nuestra sede policial ha sido restaurada en sus diversas áreas comunes y de oficinas, teniendo mayor luminosidad y contando con nuevas cámaras de seguridad que permiten la visualización idónea de todo lo que ocurre en las instalaciones. <br><br>
+               Igualmente fue colocado un sistema de reconocimiento facial para el control de acceso, con un mecanismo de activación de puertas magnéticas de seguridad en sus entradas y en el parque de armas. <br><br>
+               Por su parte en el Centro Preventivo de Resguardo y Garantías del Aprehendido fueron puestos vidrios de seguridad y se creó un espacio para mejorar el control de los detenidos y su visita. <br><br>
+               <b>PoliChacao en números en 100 días de gestión:</b> <br> <br>
+               Verificaciones por el <b>Sistema de Investigación e Información Policial (Siipol)</b>  <br> <br>
+               <table>
+                  <tr>
+                     <th></th>
+                     <th>NOV 2024</th>
+                     <th>DIC 2024</th>
+                     <th>ENE 2025</th>
+                     <th>TOTAL</th>
+                  </tr>
+                  <tr>
+                     <th>PERSONAS</th>
+                     <td>1580</td>
+                     <td>2095</td>
+                     <td>2238</td>
+                     <td>5913</td>
+                  </tr>
+                  <tr>
+                     <th>MOTOS</th>
+                     <td>765</td>
+                     <td>1583</td>
+                     <td>988</td>
+                     <td>3336</td>
+                  </tr>
+                  <tr>
+                     <th>VEHÍCULOS</th>
+                     <td>197</td>
+                     <td>353</td>
+                     <td>388</td>
+                     <td>1376</td>
+                  </tr>
+                  <tr>
+                     <th>ARMAS</th>
+                     <td>2</td>
+                     <td></td>
+                     <td></td>
+                     <td>2</td>
+                  </tr>
+               </table><br>
+               <p class="texto_black">
+                  •	Total de Aprehensiones de personas solicitadas: 43 <br>
+                  •	Total de Actuaciones Positivas - Aprehensiones =   50<br><br>
+
+                  Robo: 5<br>
+                  Hurto: 14<br>
+                  Riña: 4<br>
+                  Lesiones personales: 8 <br>
+                  Violencia contra la mujer: 8<br>
+                  Drogas: 1<br>
+                  Ultraje: 5<br>
+                  Amenazas de muerte: 1<br>
+                  Abuso: 1<br>
+                  Actos lascivos: 1<br>
+                  Estafa: 2<br><br>
+
+                  •	Total de sanciones administrativas impuestas (multas) = 16.752<br>
+                  •	Total de vehículos remolcados por infracción = 2.963<br><br>
+                  En Chacao, somos innovación, tecnología, vanguardia y sobre todo Orden y Seguridad. 
+               </p> 
+            </p>
+            <div class="btn-cerrar3">
+                <label for="btn-modal3">
+                    Cerrar
+                </label>
+            </div>
+         </div>
+      </div>
+      </div>
+   </div>
+   <!--===== FIN DE 100 DIAS DE GESTION =====-->
+
+   <!--===== INFORMACION DE INTERES =====-->
+   <div class="card">
+      <figure>
+         <img src="Public/img/informaciones/info_interes.png">
+      </figure>
+      
+      <div class="contenido-card" id="prueba">
+      <pp>Información de Interés</pp>
+      <div class="boton-modal4">
+        <label for="btn-modal4">
+            Leer
+        </label>
+      </div>
+      <input type="checkbox" id="btn-modal4">
+      <div class="container-modal4">
+        <div class="content-modal4">
+           
+            <div class="btn-cerrar4">
+                <label for="btn-modal4">
+                    Cerrar
+                </label>
+            </div>
+         </div>
+      </div>
+      </div>
+   </div>
+</div>
+<!--===== Fin Tarjetas =====-->
+
+<!--===== fin de la informacion =====-->
+
+<!--===== Tarjetas =====-->
+<div class="container-card2"> 
+   <!--===== ESTRUCTURA ORGANIZATIVA =====-->
+   <div class="card2">
+      <figure>
+         <img src="Public/img/informaciones/organigrama.png">
+      </figure>
+      
+      <div class="contenido-card2">
+      <p>Estructura Organizativa</p>
+      <div class="boton-modal6">
+        <label for="#">
+            Ver
+        </label>
+      </div>
+      <input type="checkbox" id="btn-modal6">
+      <div class="container-modal6">
+        <div class="content-modal6">
+            <img src="Public/img/contruccion/pag_contruccion.png" class="img_estruc">
+            
+            <div class="btn-cerrar6">
+                <label for="btn-modal6">
+                    Cerrar
+                </label>
+            </div>
+         </div>
+      </div>
+      </div>
+   </div>
+   <!--===== FIN DE ESTRUCTURA =====-->
+
+   <!--===== EVALUACION DE SURPERVISION =====-->
+   <div class="card2">
+      <figure>
+         <img src="Public/img/informaciones/eval_supervicion.jpg">
+      </figure>
+
+      <div class="contenido-card2">
+         <p>Evaluación de Supervisión Continua</p>
+         <a href="#">Ver Niveles en Evaluación</a>
+      </div>
+   </div>
+   <!-- ===== FIN DE EVALUACION =====-->
+   
+   <!--===== SERVICIO MEDICO =====-->
+   <div class="card2">  
+    <figure>  
+        <img src="Public/img/informaciones/servicio_medico.jpeg" alt="Servicio Médico">  
+    </figure>  
+    
+    <div class="contenido-card2">  
+        <p>Servicio Médico</p>  
+        
+        <div class="boton-modal5">  
+            <label for="btn-modal5">Ver</label>  
+        </div>  
+        
+        <input type="checkbox" id="btn-modal5">  
+        
+        <div class="container-modal5">  
+            <div class="content-modal5">  
+                <video id="video-servicio" width="500" height="500" controls>  
+                    <source src="videos/info_servicio_medico.mp4" type="video/mp4">   
+                </video>
+
+                <video id="video-servicio2" width="500" height="500" controls>
+                  <source src="videos/SERVICIO DE SALUD.mp4" type="video/mp4"> 
+                </video>
+
+                <div class="btn-cerrar5">  
+                    <label for="btn-modal5">Cerrar</label>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+    <!--===== FIN DE SERVICIO MEDICO =====-->
+   </div>  
+</div>
+</div>
+<!--===== Fin Tarjetas =====-->
+
+<!--===== lineas de mando provicionales =====-->
+<h1 class="titulo_pro">LÍNEA DE MANDO</h1>
+<div class="timeline-container">
+<div class="container-alcalde-1">    
+   <!--===== ALCALDE PRIMER PUESTO 1 =====-->
+   <div class="card3">
+      <figure>
+         <img src="Public/img/linea_mando/1er_mando.jpg" class="alcalde">
+      </figure>
+
+      <div class="descripcion">
+        <b class="subti">Gustavo Adolfo Duque Sáez</b>
+        <br>
+        <p class="dirc">Ciudadano Alcalde del Municipio Chacao </p>
+      </div>
+   </div>
+   <!--===== FIN DE PRIMER PUESTO =====-->
+</div>
+
+<div class="container-alcalde">  
+   <!--===== DIRECTOR SEGUNDO PUESTO 2 =====-->
+   <div class="card3">
+      <figure>
+         <img src="Public/img/linea_mando/DIRECTOR GENERAL.png">
+      </figure>
+
+      <div class="descripcion">
+      <b class="subti"> C/M Luis Gonzalo Fernández De Córdova </b>
+        <br>
+        <p class="dirc">Director General</p>
+      </div>
+   </div>
+   <!--===== FIN DE SEGUNDO PUESTO 2 =====-->
+</div>
+
+
+<div class="container-alcalde">  
+    <!--===== SUBDIRECTOR TERCER PUESTO 3 =====-->
+   <div class="card3">
+      <figure>
+         <img src="Public/img/linea_mando/GUANIPA.png">
+      </figure>
+
+      <div class="descripcion">
+      <b class="subti"> C/J José Ramírez Guanipa</b>
+        <br>
+        <hp class="dirc">Subdirector</p>
+      </div>
+   </div>
+   <!--===== FIN DEL TERCER PUESTO 3 =====-->
+</div>
+
+<div class="container-alcalde">  
+<!--===== COORDINADOR CUARTO PUESTO 4 =====-->
+   <div class="card3">
+      <figure>
+         <img src="Public/img/linea_mando/MENA.png">
+      </figure>
+      
+      <div class="descripcion">
+      <b class="subti"> C/J Reinaldo Mena González </b>
+        <br>
+        <hp class="dirc">Director de Centro de Coordinación Policial</p>
+      </div>
+   </div>
+   <!--===== FIN DE CUARTO PUESTO 4 =====-->
+</div>
+</div>
+<!--===== prueba de videos =====-->
+<div class="container3">  
+   <aside class="video-list">  
+      <h1>Lista de Vídeos</h1>  
+      <ul class="container-videos">   
+            <li data-src="videos/canal_youtube/video-1.mp4" data-title="Video 1 - Prueba salutación Gustavo" class="lista-video">  
+                  <span>Mensaje del Día de las Madres Polichacao</span>  
+               </li>  
+               <li data-src="videos/canal_youtube/video-2.mp4" data-title="Video 2 - Desarrollo" class="lista-video">  
+                  <span>Brindar Atención Oportuna y Respuesta Eficaz</span>  
+               </li>  
+               <li data-src="videos/canal_youtube/video-3.mp4" data-title="Video 3 - Conclusión" class="lista-video">  
+                  <span>Evita Ser Sancionado en Chacao</span>  
+               </li>  
+               <li data-src="videos/canal_youtube/video-4.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>Detenido "Roba cables" en Chacao</span>  
+               </li>
+               <li data-src="videos/verticales/academia final.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>Academia Final</span>  
+               </li>  
+               <li data-src="videos/verticales/ALCALDE CARNAVAL (1).mp4" data-title="Video 1 - Prueba salutación Gustavo" class="lista-video">  
+                  <span>ALCALDE CARNAVAL</span>  
+               </li>  
+               <li data-src="videos/verticales/COMUNAL 2.mp4" data-title="Video 2 - Desarrollo" class="lista-video">  
+                  <span>COMUNAL</span>  
+               </li>  
+               <li data-src="videos/verticales/DETENIDO 02-25_1 (1).mp4" data-title="Video 3 - Conclusión" class="lista-video">  
+                  <span>DETENIDO 02-25_1</span>  
+               </li>  
+               <li data-src="videos/verticales/DETENIDO 05-02 ultimo.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>DETENIDO 05-02 ultimo</span>  
+               </li>
+               <li data-src="videos/verticales/DETENIDO 2801 con tapa.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>DETENIDO 2801 con tapa</span>  
+               </li>
+               <li data-src="videos/verticales/DETENIDO ZARA def.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>DETENIDO ZARA def</span>  
+               </li>
+               <li data-src="videos/verticales/MICRO 1 VANESSA MOTORIZADO.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>MICRO 1 VANESSA MOTORIZADO</span>  
+               </li>
+               <li data-src="videos/verticales/MICRO AUTOBUSERO PARTE 1_Subido a YT.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>MICRO AUTOBUSERO PARTE 1</span>  
+               </li>
+               <li data-src="videos/verticales/MICRO AUTOBUSERO PARTE 2 ALCALDE.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>MICRO AUTOBUSERO PARTE 2 ALCALDE</span>  
+               </li>
+               <li data-src="videos/verticales/ROMAN definitivo.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>ROMAN definitivo</span>  
+               </li>
+               <li data-src="videos/verticales/TIPS DE CONDUCCIÓN DESPLAZATE SEGURO  (1) (1).mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>TIPS DE CONDUCCIÓN DESPLAZATE SEGURO</span>  
+               </li>
+               <li data-src="videos/verticales/TU VIDA MODIFICADO" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>TU VIDA MODIFICADO</span>  
+               </li>
+               <li data-src="videos/verticales/VANESSA MICRO 2 CANTA RUTAS.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>VANESSA MICRO 2 CANTA RUTAS</span>  
+               </li>
+               <li data-src="videos/verticales/vanessa.mp4" data-title="Video 4 - Conclusión" class="lista-video">  
+                  <span>VANESSA</span>  
+               </li>
+      </ul>  
+   </aside>  
+   <main class="video-player">  
+      <video id="main-video" controls>  
+         <source src="videos/video1.mp4" type="video/mp4">  
+         Tu navegador no soporta el tag de video.  
+      </video>  
+   </main>  
+</div>  
+<!--===== final de prueba de videos =====-->
+
+<!--===== calendario =====-->
+<div class="fondo" id="ancla">
+   <div class="calendar-container">
+      <!-- Fondo de imagen -->
+      <div class="background-image"></div>
+  
+      <!-- Contenido principal -->
+      <div class="calendar-content">
+         <!-- Encabezado con mes y botones -->
+         <div class="header-calendario">
+            <button class="nav-button" id="prevMonthBtn">&lt;</button>
+            <h1 class="month-name" id="currentMonthDisplay"></h1>
+            <button class="nav-button" id="nextMonthBtn">&gt;</button>
+         </div>
+         
+         <!-- Botón para ver los cumpleaños del mes -->
+         <div class="birthdays-button-container">
+            <button class="birthdays-button">Cumpleañeros del Mes</button>
+         </div>
+    
+         <!-- Espacio para la imagen de fondo interna -->
+         <div class="inner-image-section">
+         <!-- Puedes colocar la imagen aquí si quieres -->
+         </div>
+      </div>
+   </div>
+</div>
+<!--===== fin calendario =====-->
+
+
+   <!--===== footer =====-->
+   <footer>
+   <div class="footerContainer">
+      <div class="socialIcons">
+         <h3>¡Síguenos!</h3>
+      </div>
+      <br>
+      <!--===== Redes sociales =====-->
+      <div class="wrapper2">
+      <a href="#" class="icon facebook">
+         <div class="tooltip">Facebook</div>
+         <span><i class="fab fa-facebook-f"></i></span>
+      </a>
+      <a href="#" class="icon twitter">
+         <div class="tooltip">Twitter</div>
+         <span><i class="fab fa-twitter"></i></span>
+      </a>
+      <a href="#" class="icon instagram">
+         <div class="tooltip">Instagram</div>
+         <span><i class="fab fa-instagram"></i></span>
+      </a>
+      <a href="#" class="icon tiktok">
+         <div class="tooltip">Tik Tok</div>
+         <span><i class="fab fa-tiktok"></i></span>
+      </a>
+      <a href="#" class="icon youtube">
+         <div class="tooltip">Youtube</div>
+         <span><i class="fab fa-youtube"></i></span>
+      </a>
+      </div>
+      <!--===== Fin de Redes Sociales =====-->
+   </div>
+   </footer>
+   <!--===== FINAL DEL FOOTER =====-->
+
+   <!--===== PROCESOS DE JAVASCRIPT =====-->
+
+      <!--===== MAIN JS =====-->
+      <script src="Public/js/main.js"></script>
+      <!--===== CALENDARIO JS =====-->
+      <script src="Public/js/calen.js"defer></script>
+      <!--===== btones modales =====-->
+      <script src="Public/js/modal.js"></script>
+      <!--===== animacion de la linea de mando =====-->
+      <script src="Public/js/animatio.js"></script>
+      <!--===== animaciones del carrusell =====-->
+      <script src="Public/js/noticias.js."></script>
+      <!--===== finalizacion del video =====-->
+      <script src="Public/js/finsvi.js"></script>
+      <!--===== carrusel video =====-->
+      <script src="Public/js/carruvideo.js"></script>  
+
+   <!--===== FINAL DEL PROCESO =====-->
+   </body>
+</html>

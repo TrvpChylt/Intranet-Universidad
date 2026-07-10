@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Automatizado RRHH</title>
+    <link rel="shortcut icon" href="../Public/img/polichacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Public/css/func_body.css">
+    <link rel="stylesheet" href="../Public/css/menu.css">
+</head>
+<body>
+    <header id="header">
+        <div class="cont-header">
+            <div class="cont-foto">
+                <div class="img-file" ></div>
+            </div>
+            <div class="cont-dato-perso">
+                <table>
+                    <tr>
+                        <td class="titulo_tabla">CÉDULA:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">NOMBRE:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">CARGO:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">RANGO:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">EDO.CIVIL:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">GRUPO SANGUÍNEO:</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cont-dato-admin">
+                <table>
+                    <tr>
+                        <td class="titulo_tabla">ADSCRITO A:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">NIVEL SUPERIOR:</td>
+                        <td></td>                    
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">SUPERVISOR:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="titulo_tabla">TIEMPO SERVICIO:</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cont-logo">
+                <img src="../Public/img/polichacao.png" class="img-logo" alt="">
+            </div>
+        </div>
+        <nav class="navbarra" id="navbarra">
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" id="menu-toggle">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>  
+                    <div class="titulo">
+                        <h1>Sistema de Autogestión de Talento Humano</h1>
+                        <a href="../Public/include/logout.php">
+                            <img class="img-exit" src="../Public/img/new_icons/logout.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-items">
+                    <div class="menu">
+                        <li class="item">
+                            <a onclick="loadpage('./Menu-opciones.html')">Expediente Personal</a>
+                        </li>
+                        <li class="item">
+                            <a onclick="loadpage('./Menu-opciones2.html')">Consultas y Solicitudes</a>
+                        </li>
+                    
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="contFrame">
+        <section>
+            <iframe id="contFrame" src="Menu-opciones.html"></iframe>
+        </section>
+    </main>
+    <button class="float-button" id="floatButton" onclick="toggleScroll()">↓</button>
+    <button class="btn-float" type="button">←</button>
+    <script src="../Public/js/loadpage.js"></script>
+    <script src="../Public/js/button_floatt.js"></script>
+    <script src="../Public/js/button_navbar.js"></script>
+    <script src="../Public/js/ocultar_menu.js"></script>
+</body>
+</html>

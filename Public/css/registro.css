@@ -1,0 +1,75 @@
+/* base de ccs */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/background/pag_principal.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* css de formulario */
+h2 { 
+    text-align: center; 
+    color: #fff; 
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+div {
+    background-color: #14161e;
+    padding: 50px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #2615b8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #5d51cf   ;
+}
+.btn-button {
+    margin-top: 8px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: #2615b8;
+    border-radius: 4px;
+}
+.btn-button a {
+    color: white;
+    text-decoration: none;
+}
+.btn-button:hover {
+    background-color: #5d51cf   ;
+}
+.show-password {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #fff;
+}
+/* fin de css de formulario */
