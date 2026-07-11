@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Intranet | Talento Humano</title>
+    <!--===== CSS Y LOGO DE PAGINA  =====-->
+    <link rel="stylesheet" href="../Public/css/login_1.css">
+    <link rel="shortcut icon" href="../Public/img/polichacao.png" type="image/x-icon">
+</head>
+<body>
+    <!--===== CONTENEDOR DE INICIO DE SESION =====-->
+    <div>
+        <form action="./inicio.html" method="post">
+            <h2>Iniciar sesión</h2>
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" maxlength="9" autocomplete="off" onkeypress="return validarSoloNumeros(event)" >
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <span class="text-olvidar">
+                <a href="#" onclick="redirectToRegister()">Registrarse - Olvidé la Contraseña</a>
+            </span>
+            <br>
+            <input name="btnIngresar" type="submit" value="Ingresar">
+        </form>
+        <a href="../index.html"><button class="btn-button">Volver</button></a>
+    </div>
+    <!--===== FIN DE CONTENEDOR DE INICIO DE SESION =====-->
+<script src="../Public/js/form_dinamico.js"></script>
+<script>
+    function validarSoloNumeros(event) {
+        var charCode = event.which || event.keyCode;
+
+        // Permitir solo números (0-9) o la tecla Enter (13)
+        if ((charCode >= 48 && charCode <= 57) || charCode === 13) {
+            return true; // Permite la tecla
+        }
+        // Bloquear cualquier otra tecla
+        event.preventDefault();
+        return false;
+    }
+</script>
+</body>
+</html>

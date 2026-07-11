@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    margin: auto;
+    width: 660px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+span {
+    color: #ff0000;
+}
+
+option:disabled {
+    color: #ff000069;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #011554;
+}
+
+.encabezado-titulo {
+    background-color: #807f7fa2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tituloMensaje {
+    background-color: #807f7fa2;
+    font-size: 12px;
+}
+
+/* Agrega este código a tu archivo CSS */
+.sin-solicitar {
+    color: green; /* Cambia el color según tus necesidades */
+    font-weight: bold;
+}
+.solicitado {
+    color: red; /* Cambia el color según tus necesidades */
+    font-weight: bold;
+}
+
+.aprobado {
+    color: #000000; /* Cambia el color según tus necesidades */
+    font-weight: bold;
+}
+
+
+.card_3 {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 12px;
+    color: #333;
+}
+
+.table-cont td {
+    font-size: 15px;
+}
+
+.encabezado {
+    background-color: #807f7fa2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.msj-vacios {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.select-date {
+    text-align: center;
+    padding: 4px;
+    width: 15%;
+}
+
+.selectPeriodos {
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    margin-top: -6px;
+    justify-content: center;
+    gap: 10px; /* Añade 20px de espacio entre los divs */
+}
+
+.cont-titulo-poli {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cont-titulo-admin {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cont-message-poli {
+    width: 600px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #011554;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 15);
+}
+
+.cont-message-admin {
+    width: 600px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #011554;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 15);
+}
+
+.cont-footer  {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.text-footer {
+    color: #ff0000;
+    font-size: 16px;
+}
+
+.btn-solicitar {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 15);
+    margin-bottom: 2px;
+}
+
+.btn-solicitar:hover {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.btn-preview {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 15);
+    margin-bottom: 40px;
+}
+
+.btn-preview:hover {
+    font-weight: bold;
+    color: #ff0000;
+}

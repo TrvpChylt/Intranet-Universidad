@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Public/css/style_constancia.css">
+    <title>Constancia de Trabajo</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="cont-table">
+        <form action="constancia_g.php" method="post">
+            <table border="1">
+                <tr class="titulo-principal">
+                    <th colspan="2">SOLICITUD DE CONSTANCIA DE TRABAJO</th>
+                </tr>
+                
+                <tr class="titulo">
+                    <td>MOTIVO DE LA SOLICITUD</td>
+                    <td>
+                        <select name="motivo">
+                            <option value="REFERENCIA PERSONAL">REFERENCIA PERSONAL</option>
+                            <option value="TARJETA DE CRÉDITO">TARJETA DE CRÉDITO</option>
+                            <option value="CRÉDITO VIVIENDA">CRÉDITO VIVIENDA</option>
+                            <option value="CRÉDITO VEHÍCULO">CRÉDITO VEHÍCULO</option>
+                            <option value="PERSONAL">PERSONAL</option>
+                            <option value="ESTUDIO">ESTUDIO</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr class="titulo">
+                    <td>TIPO DE CONSTANCIA</td>
+                    <td>
+                        <select id="tipoCont" name="tipoCont" onchange="mostrarValor()">
+                            <option value="SIN SUELDO" selected >SIN SUELDO</option>
+                            <option value="MENSUAL" >MENSUAL</option>
+                            <option value="ANTIGUEDAD">ANTIGUEDAD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="titulo">
+                    <td>MONTO</td>
+                    <td>
+                        <input type="text" id="monto" name="monto" readonly> BS
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <button type="submit" class="btn-print">Imprimir</button>
+
+   
+    <div class="cont-footer">
+        <h4 class="text-info">EN CASO DE QUE LOS DATOS NO ESTEN ACTUALIZADOS</h4>
+        <h3 class="text-info">DIRIGIRSE A LA DIRECCIÓN DE TALENTO HUMANO</h3>
+    </div>
+    </form>
+    
+</body>
+</html>

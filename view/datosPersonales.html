@@ -1,0 +1,120 @@
+
+
+<!--===== COMIENZO DEL HTML =====-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="../Public/css/style_date_pers.css">
+    <title>RRHH | Dato Personales</title>
+</head>
+<body>
+    <!--===== CONTENEDOR DE LOS DATOS PERSONALES =====-->
+    <div class="contenedor">
+        <h2 class="titulo">Datos Personales Del Funcionario</h2>
+        <!--===== FORMULARIO =====-->
+        <form action="../../include/updateDateFunc.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <b>CODIGO:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="credencial" type="text" id="credencial" readonly> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>CREDENCIAL UNICA:</b>
+                    </td>
+                    <td>
+                        <input class='text-date' name='cred_unica' type='text' id='cred_unica' readonly >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>CEDULA:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="cedula" type="text" id="cedula" readonly >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>NOMBRE:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="nombre" type="text" id="nombre" readonly >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>APELLIDO:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="apellido" type="text" id="apellido" readonly >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>FECHA DE NACIMIENTO:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="fch_nac" type="text" id="fch_nac" readonly >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>SEXO:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="sexo" type="text" id="sexo" readonly >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>EDO CIVIL:</b>
+                    </td>
+                    <td>
+                        <select class="select-date" name="edoCivil" id="edoCivil">
+                            <option value="0" >SOLTERO</option>
+                            <option value="1" >CASADO</option>
+                            <option value="2" >VIUDO</option>
+                            <option value="3" >DIVORCIADO</option>
+                            <option value="4" >CONCUBINATO</option>
+                        </select>
+                    </td>
+                    <td class="tabla-oculta">
+                        <div id="info1" class="info">Datos a modificar</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>TIPO DE SANGRE:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="tpo_sangre" type="text" id="tpo_sangre"  maxlength="5">
+                    </td>
+                    <td class="tabla-oculta">
+                        <div id="info2" class="info">Datos a modificar</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>LUGAR DE NACIMIENTO:</b>
+                    </td>
+                    <td>
+                        <input class="text-date" name="lugar_nac" type="text" id="lugarNac" readonly >
+                    </td>
+                </tr>
+            </table>
+            <button name="enviarDate" class="boton-actualizar" value="enviar">Actualizar Datos</button>
+        </form>
+        <!--===== FIN FORMULARIO =====-->
+    </div>
+    <!--===== FIN CONTENEDOR DE LOS DATOS PERSONALES =====-->
+</body>
+</html>
+<!--===== FINAL DEL HTML =====-->

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    margin: auto;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin-bottom: 10px;
+    width: 50%;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid black; /* Bordes de las celdas */
+    padding: 2px; /* Espacio interno de las celdas */
+    
+}
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #002a79;
+}
+.contenedor {
+    margin-top: 45px;
+}
+.text-date {
+    padding: 6px;
+    width: 95%;
+    font-size: 12px;
+}
+.select-date {
+    padding: 6px;
+    width: 100%;
+}
+
+.tabla-oculta {
+    border: none;
+}
+.info {
+    padding: 5px;
+    margin-top: -15px;
+    margin-left: 10px;
+    color: #002a79;
+    font-weight: bold;
+    position: absolute; /* Posición absoluta para mostrar al lado */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 15); */
+}
+.boton-actualizar {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 15);
+    margin-bottom: 40px;
+}
+.boton-actualizar:hover{
+    color: #ff0000;
+}
+

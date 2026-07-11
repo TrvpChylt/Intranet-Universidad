@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Public/css/style.vacacione1.css">
+    <title>Vacaciones</title>
+</head>
+<body>
+    <form action="vacaciones_g.php" method="post">
+        <br>
+        <table>
+            <h1 class="titulo">Solicitud de Vacaciones</h1>
+            <tr class="tituloMensaje">
+                <th>
+                    <h4>USTED TIENE ACUMULADOS: 
+                    <span>0</span> DÍAS EN 
+                    <span>0</span> PERIODOS PENDIENTES
+                    </h4>
+                </th>
+            </tr>
+        </table>
+        <br>
+        <table border="1">
+            <tr class="encabezado-titulo">
+                <td><h4>PERIODOS</h4></td>
+                <td><h4>Nº DE DÍAS</h4></td>
+                <td><h4>TIPO DE DÍAS</h4></td>
+                <td><h4>ESTADOS</h4></td>
+                <td><h4>SELECCIONAR</h4></td>
+            </tr>
+            
+            <tr class="table-cont">
+                <!-- SELECT PARA PERIODOS -->
+                <td>
+                    <select class="selectPeriodos" name="periodo_0">  
+                        <option value="2025-2026">2025-2026</option>
+                    </select>
+                </td>
+                <!-- SELECT PARA Nº DE DÍAS -->
+                <td>
+                    <select class="selectPeriodos" name="numDia_0">
+                        <option value="15">15 DÍAS</option>
+                    </select>
+                </td>
+
+                <!-- SELECT PARA TIPO DE DÍAS -->
+                <td>
+                    <select class="selectPeriodos" name="tipoDia_0">
+                        <option value="Hábiles">Hábiles</option>
+                    </select>
+                    <input type="hidden" name="id_vaca_0" value="">
+                </td>
+                
+                <!-- ESTADO DE LA SOLICITUD -->
+                <td class="estadoPeriodo pendiente">
+                    Pendiente
+                </td>
+
+                <!-- CHECBOX DE SELECCIÓN -->
+                <td>
+                    <input type="checkbox" name="opcion" value="0" onclick="manejarCheckbox(this)">
+                </td>
+            </tr>
+
+            <!-- MENSAJE EN CASO DE NO TENER PERIODOS (OPCIONAL EN DISEÑO) -->
+            <tr class="msj-vacios" style="display: none;">
+                <td colspan="5">NO TIENE PERIODO PENDIENTE</td>
+            </tr>
+                
+            <input type="hidden" name="credencial" class="btn-print" value="">
+            <input type="hidden" name="autenticacion" class="btn-print" value="">
+        </table>
+        <br>
+        <table>
+            <tr class="tituloMensaje">
+                <td>
+                    <h4>A PARTIR DEL DIA</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- SELECTORES PARA LA FECHA -->
+                    <select class="select-date" name="dateDia" id="dateDia"></select>
+                    <select class="select-date" name="dateMes" id="dateMes">
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <select class="select-date" name="dateAño" id="dateAño">
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <button class="btn-preview">Ver Solicitud</button>
+    </form>
+
+    <div class="contenedor">
+        <div class="cont-message-poli">
+            <h3 class="cont-titulo-poli">Días de disfrute vacacional según antigüedad (POLICIAL)</h3>
+            <p>1er. Quinquenio, 20 días hábiles / 2do. Quinquenio, 23 días hábiles.</p>
+            <p>11 años, 25 días / 12 años, 26 días / 13 años, 27 días /</p>
+            <p>14 años, 28 días / 15 años, 29 días hábiles.</p>
+            <p>A partir de 16 años 30 días hábiles.</p>
+        </div>
+        <br>
+        <div class="cont-message-admin">
+            <h3 class="cont-titulo-admin">Días de disfrute vacacional según antigüedad (ADMINISTRATIVA)</h3>
+            <p>De 1 a 10 años de servicio, corresponden 33 días continuos.</p>
+            <p>11 años, 25 días / 12 años, 26 días / 13 años, 27 días /</p>
+            <p>14 años, 28 días / 15 años, 29 días hábiles.</p>
+            <p>A partir de 16 años 30 días hábiles.</p>
+        </div>
+    </div>
+
+    <footer class="cont-footer">
+        <h4 class="text-footer">
+            Si el periodo a disfrutar no tiene los días que corresponden con su antigüedad, según la información descrita arriba,<br>
+            por favor pasar por la DIRECCIÓN DE TALENTO HUMANO.
+        </h4>
+    </footer>
+
+    <script src="../../js/manejar_checkbox.js"></script>
+    <script>
+        function actualizarFecha() {
+            const dateMesSelect = document.getElementsByName('dateMes')[0];
+            const dateAñoSelect = document.getElementsByName('dateAño')[0];
+            const dateDiaSelect = document.getElementsByName('dateDia')[0];
+
+            if (!dateMesSelect || !dateAñoSelect || !dateDiaSelect) return;
+
+            const dateMes = dateMesSelect.value;
+            const dateAño = dateAñoSelect.value;
+
+            // Obtener el número máximo de días en el mes
+            const diasMaximos = new Date(dateAño, dateMes, 0).getDate();
+
+            // Almacenar el día seleccionado antes de limpiar el select
+            const diaSeleccionado = dateDiaSelect.value;
+
+            // Limpiar el contenido del selector de días
+            dateDiaSelect.innerHTML = ''; 
+
+            // Llenar el selector de días
+            for (let i = 1; i <= diasMaximos; i++) {
+                const valor = i.toString().padStart(2, '0');
+                const option = document.createElement('option');
+                option.value = valor;
+                option.text = valor;
+                dateDiaSelect.appendChild(option);
+            }
+
+            // Volver a establecer el día seleccionado si sigue siendo válido
+            if (diaSeleccionado && diasMaximos >= parseInt(diaSeleccionado)) {
+                dateDiaSelect.value = diaSeleccionado;
+            } else {
+                dateDiaSelect.value = diasMaximos.toString().padStart(2, '0');
+            }
+        }
+
+        // Evento para cargar la fecha actual al cargar la página
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const fechaHoy = new Date();
+            const dateMesSelect = document.getElementsByName('dateMes')[0];
+            const dateAñoSelect = document.getElementsByName('dateAño')[0];
+            const dateDiaSelect = document.getElementsByName('dateDia')[0];
+
+            // Establecer el mes y el año actuales
+            dateMesSelect.value = (fechaHoy.getMonth() + 1).toString().padStart(2, '0');
+            dateAñoSelect.value = fechaHoy.getFullYear().toString();
+
+            // Llenar el selector de días y establecer el día actual
+            actualizarFecha(); 
+            dateDiaSelect.value = fechaHoy.getDate().toString().padStart(2, '0'); 
+
+            // Agregar eventos para cambiar el mes o el año
+            dateMesSelect.addEventListener('change', actualizarFecha);
+            dateAñoSelect.addEventListener('change', actualizarFecha);
+        });
+    </script>
+</body>
+</html>
